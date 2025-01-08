@@ -1,0 +1,31 @@
+a{
+    @include resize-link;
+}
+
+button{
+    @include resize-button;
+}
+
+html{
+    font-family: var(--Jost-font);
+    font-size: var(--font-size);
+    font-weight: var(--light-weight);
+
+    &::-webkit-scrollbar{
+        width: 5px;
+        background-color: var(--accent-title);
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: var(--main-dark);
+    }
+}
+
+img{
+    user-select: none;
+}
+
+h1, h2, h3, h4{
+    font-weight: var(--dark-weight);
+    font-family: var(--Jost-font);
+}

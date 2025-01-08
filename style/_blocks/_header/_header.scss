@@ -1,0 +1,43 @@
+.header-page{
+    @include width-page;
+
+    &__block{
+        @include width-blocks(1720, 0);
+        padding-block: 30px;
+
+        .header{
+            @include flex-space-center(0);
+
+            &-logo{
+                @include mobile{
+                    width: 136px
+                }
+            }
+
+            &-list{
+                @include flex-space-center(40);
+                color: var(--main-light);
+                user-select: none;
+
+                &__link{
+                    position: relative;
+
+                    @include underline(var(--main-light));
+                }
+
+                @include laptop{
+                    display: none
+                }
+            }
+
+            &__tel{
+                color: var(--main-light);
+                font-size: var(--h3-font);
+
+                @include laptop{
+                    display: none
+                }
+            }
+        }
+    }
+}

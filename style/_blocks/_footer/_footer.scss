@@ -1,0 +1,50 @@
+.footer-page{
+    @include width-page();
+    color: var(--main-light);
+
+    &__block{
+        @include width-blocks(1720, 0);
+        padding-block: 40px;
+
+        .footer{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+
+            &__logo{
+                @include mobile{
+                    margin-inline: auto;
+                    width: 136px;
+                }
+            }
+
+            &__tel{
+                margin-left: auto;
+                @include fluid-text(16, 30);
+
+                @include mobile{
+                    margin-inline: auto;
+                }
+            }
+
+            &__text{
+                color: var(--assistive-lightt);
+                @include fluid-text(14, 16);
+
+                @include mobile{
+                    margin-inline: auto;
+                    margin-top: 20px;
+                }
+            }
+
+            @include mobile{
+                grid-template-columns: 1fr;
+                row-gap: 20px;
+            }
+        }
+
+        @include mobile{
+            padding-block: 40px 20px;
+        }
+    }
+}

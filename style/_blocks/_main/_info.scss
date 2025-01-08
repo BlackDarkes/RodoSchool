@@ -1,0 +1,51 @@
+.info-main{
+    @include width-page(var(--main-light));
+
+    &__block{
+        @include width-blocks(1160, 120px);
+
+        .info{
+            @include flex-column(60);
+
+            &-obj{
+
+                &__text{
+                    @include fluid-text(20, 30);
+                    width: min(100%, 891px);
+                }
+
+                &-list{
+                    @include flex-row(40);
+
+                    &__title{
+                        @include fluid-text(60, 70);
+                        color: var(--main-orange);
+
+                        @include laptop{
+                            display: inline-block;
+                            margin-inline: auto;
+                        }
+                    }
+
+                    &__text{
+                        @include fluid-text(16, 18);
+                        color: var(--accent-dark);
+
+                        @include laptop{
+                            text-align: center
+                        }
+                    }
+
+                    @include laptop{
+                        @include flex-column(30);
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        @include laptop{
+            margin-bottom: 60px;
+        }
+    }
+}

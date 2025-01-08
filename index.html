@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="keywords" content="Robots, school, roboschol, robo schol">
+    <meta name="description" content="an institution for the formation of a personnel pedagogical reserve in the field of robotics and programming">
+    <meta name="author" content="BD">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+    <title>RoboSchoole</title>
+</head>
+<body>
+    <header class="header-page">
+        <div class="header-page__block">
+            <div class="header">
+                <a href="" class="header-logo"><img src="./logo/logo.svg" alt="Логотип" class="header-logo__logo"></a>
+
+                <ul class="header-list">
+                    <li><a href="" class="header-list__link">О школе</a></li>
+                    <li><a href="" class="header-list__link">Тренеры</a></li>
+                    <li><a href="" class="header-list__link">Стоимость</a></li>
+                </ul>
+
+                <a href="tel:+78000001122" class="header__tel">+7 800 000 11 22</a>
+
+                <a href="tel:+78000001122" class="header-telehom-mobile"><img src="./image/_header/telephon/Call.svg" alt="" class="header__telehom-mobile__img"></a>
+
+                <div class="header-burger">
+                    <div class="header-burger__block"></div>
+                    <input type="checkbox" name="burger__checked" id="burger__checked" class="header-burger__checked">
+                    <label for="burger__checked" class="header-burger__button"></label>
+                    <ul class="burger-list">
+                        <li class="link"><a href="" class="burger-list__link">О школе</a></li>
+                        <li class="link"><a href="" class="burger-list__link">Тренеры</a></li>
+                        <li class="link"><a href="" class="burger-list__link">Стоимость</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="main">
+        <section class="label-main">
+            <div class="label-main__block">
+                <div class="label">
+                    <div class="label-object">
+                        <h1 class="label-object__title">ROBO SCHOOL</h1>
+                        <span class="label-object__text">Курсы повышения квалификации по робототехнике для педагогов начальной школы</span>
+                        <form style="display: flex;" >
+                            <button type="submit" class="label-object__button">Записаться на курс</button>
+                        </form>
+                    </div>
+                    <div class="label-image">
+                        <img src="./image/_main/label/girl.png" alt="" class="label-image__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="info-main">
+            <div class="info-main__block">
+                <div class="info">
+                    <div class="info-obj">
+                        <p class="info-obj__text"><b>Robo School</b> – учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования</p>
+                    </div>
+
+                    <div class="info-obj">
+                        <ul class="info-obj-list">
+                            <li style="display: flex; flex-direction: column;">
+                                <h1 class="info-obj-list__title">10</h1>
+                                <p class="info-obj-list__text">УМК по различным направлениям по робототехнике</p>
+                            </li>
+                            <li style="display: flex; flex-direction: column;">
+                                <h1 class="info-obj-list__title">20</h1>
+                                <p class="info-obj-list__text">Школ, в которых запущена робототехника</p>
+                            </li>
+                            <li style="display: flex; flex-direction: column;">
+                                <h1 class="info-obj-list__title">100</h1>
+                                <p class="info-obj-list__text">Педагогов прошедших курсы повышения квалификации</p>
+                            </li>
+                            <li style="display: flex; flex-direction: column;">
+                                <h1 class="info-obj-list__title">10000</h1>
+                                <p class="info-obj-list__text">Обученных детей на базе собственных центров</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="result-main">
+            <div class="result-main__block">
+                <div class="result">
+                    <h3 class="result__title">Что вы получите после курса</h3>
+
+                    <ul class="result-list">
+                        <li class="result-list-li">
+                            <h4 class="result-list__title">Удостоверение</h4>
+                            <p class="result-list__text">Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях</p>
+                        </li>
+                        <li class="result-list-li">
+                            <h4 class="result-list__title">Знания</h4>
+                            <p class="result-list__text">По основам разработки учебно-методических комплексов
+                                по робототехнике и программированию</p>
+                        </li>
+                        <li class="result-list-li">
+                            <div class="result-list-oval">
+                                <h4 class="result-list__title">Практику</h4>
+                                <div class="result-list-oval__oval"><img src="./image/_main/result/i.svg" alt=""></div>
+                            </div>
+                            <p class="result-list__text">Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="trainer-main">
+            <div class="trainer-main__block">
+                <div class="trainer">
+                    <h3 class="trainer__title">Профессиональные тренеры</h3>
+
+                    
+                    <ul class="trainer-list" id="scroll">
+                        <li class="trainer-list-li">
+                            <img src="./image/_main/trainer/Irina.png" alt="" class="trainer-list__image">
+                            <h4 class="trainer-list__title">Ирина Лайм</h4>
+                            <p class="trainer-list__text">преподаватель по робототехнике</p>
+                            <a href="#" class="trainer-list__button">Подробнее</a>
+                        </li> 
+
+                        <li class="trainer-list-li">
+                            <img src="./image/_main/trainer/Marina.png" alt="" class="trainer-list__image">
+                            <h4 class="trainer-list__title">Марина Орлова</h4>
+                            <p class="trainer-list__text">преподаватель по робототехнике</p>
+                            <a href="№" class="trainer-list__button">Подробнее</a>
+                        </li>
+                        <li class="trainer-list-li">
+                            <img src="./image/_main/trainer/Maxim.png" alt="" class="trainer-list__image">
+                            <h4 class="trainer-list__title">Максим Петров</h4>
+                            <p class="trainer-list__text">преподаватель по программированию</p>
+                            <a href="" class="trainer-list__button">Подробнее</a>
+                        </li>
+                        <li class="trainer-list-li">
+                            <img src="./image/_main/trainer/Konstantin.png" alt="" class="trainer-list__image">
+                            <h4 class="trainer-list__title">Константин Назаров</h4>
+                            <p class="trainer-list__text">преподаватель по робототехнике</p>
+                            <a href="" class="trainer-list__button">Подробнее</a>
+                        </li>
+                        <li class="trainer-list-li">
+                            <img src="./image/_main/trainer/Liza.png" alt="" class="trainer-list__image">
+                            <h4 class="trainer-list__title">Лиза Весенняя</h4>
+                            <p class="trainer-list__text">преподаватель по программированию</p>
+                            <a href="" class="trainer-list__button">Подробнее</a>
+                        </li>
+                    </ul>
+
+                    <div class="popup__bg"> 
+                        <form class="popup">
+                            <div class="popup-up">
+                                <div class="popup-up-block">
+                                    <img src="./image/_main/trainer/popup/face.png" alt="face" class="popup-up__photo">
+
+                                    <div class="popup-info-block">
+                                        <h4 class="popup-up__title">Марина Орлова</h4>
+                                        <p class="popup-up__info">преподаватель по робототехнике</p>
+                                        <div class="popup-up-list">
+                                            <a href="" class="popup-up-list__link"><img src="./image/_main/trainer/popup/button/facebook.svg" alt="" class="popup-up__faseboock"></a>
+                                            <a href="" class="popup-up-list__link"><img src="./image/_main/trainer/popup/button/Instagram.svg" alt="" class="popup-up__instogram"></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="popup-up__close">Закрыть</button>
+                            </div>
+
+                            <div class="popup-down">
+                                <ul class="popup-down-list">
+                                    <li class="popup-down-list__li"><a href="" class="popup-down-list__link popup-down-list__link--orange">Образование</a></li>
+                                    <li class="popup-down-list__li"><a href="" class="popup-down-list__link">Опыт работы</a></li>
+                                    <li class="popup-down-list__li"><a href="" class="popup-down-list__link">Награды</a></li>
+                                </ul>
+                                
+                                <div class="popup-down-scroll">
+                                    <ul class="popup-down-text">
+                                        <li class="popup-down-text__info">Сентябрь 1995 — Июнь 2000</li>
+                                        <li class="popup-down-text__info">Санкт-Петербургский политехнический университет Петра Великого</li>
+                                        <li class="popup-down-text__info">Факультет: Компьютерных наук и технологий</li>
+                                        <li class="popup-down-text__info">Специальность: Математика и компьютерные науки</li>
+                                        <li class="popup-down-text__info">Форма обучения: Очная</li>
+                                    </ul>
+                                    <h4 class="popup-down__title">Курсы и тренинги</h4>
+                                    <ul class="popup-down-train">
+                                        <li class="popup-down-train__text">Ноябрь 2020 — Февраль 2021</li>
+                                        <li class="popup-down-train__text">Программа дополнительного образования «3D Моделирование»</li>
+                                        <li class="popup-down-train__text">Место проведения: Институт дополнительного образования «Политех»</li>
+                                    </ul>
+                                    <p class="popup-down__lorem">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veniam beatae a eius eveniet provident tempore explicabo unde repellendus nulla veritatis quis praesentium tempora architecto accusamus quo laudantium, officiis at voluptatibus sequi fuga. Optio quaerat tempora officiis. Commodi dolorem expedita aut soluta totam quam excepturi iure dolores consequuntur? Delectus sequi sed aut consequatur reprehenderit fugit nulla debitis, doloribus voluptatem rerum laboriosam laborum a voluptatum aspernatur, qui ratione voluptates officiis quod tempora nesciunt? Rem nemo amet laborum fugit cupiditate tenetur consectetur iste consequatur temporibus, explicabo doloremque, molestias enim ullam voluptatum deleniti ducimus iusto ex quisquam eos aut provident excepturi numquam quis. Earum aperiam modi rem quisquam cumque quidem sapiente quas. Atque placeat magni eligendi? Minus, officia! Suscipit adipisci neque explicabo quia? Ea minima laborum quos nam enim adipisci, voluptatum repellendus commodi cupiditate omnis soluta, doloremque fuga quibusdam nisi quas quasi nemo, expedita deleniti. Amet ut libero vero voluptates sunt facilis quo.
+                                    </p>
+                                </div>
+                            </div> 
+                        </form>
+                    </div> 
+                
+                    <form class="trainer-form">
+                        <button type="button" class="trainer__button" id="fromButton"><span>&lt;</span></button>
+                        <button type="button" class="trainer__button" id="toButton"><span>&gt;</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="price-main">
+            <div class="price-main__block">
+                <div class="price">
+                    <h3 class="price__title">Выберите нужный пакет</h3>
+
+                    <ul class="price-list">
+                        <li class="price-list-li">
+                            <h1 class="price-list__title">– PRO –</h1>
+                            <p class="price-list-text">
+                                <span class="price-list-text__money">20.000 ₽</span>
+                                <span class="price-list-text__text">УМК по робототетхнике<br> и программированию</span>
+                            </p>
+                            <form class="price-list__form">
+                                <button class="price-list__button">Оставить заявку</button>
+                            </form>
+                        </li>
+                        <li class="price-list-li">
+                            <h1 class="price-list__title">– ROBO –</h1>
+                            <p class="price-list-text">
+                                <span class="price-list-text__money">15.000 ₽</span>
+                                <span class="price-list-text__text">УМК по робототетхнике </span>
+                            </p>
+                            <form class="price-list__form">
+                                <button class="price-list__button">Оставить заявку</button>
+                            </form>
+                        </li>
+                        <li class="price-list-li">
+                            <h1 class="price-list__title">– PROG –</h1>
+                            <p class="price-list-text">
+                                <span class="price-list-text__money">10.000 ₽</span>
+                                <span class="price-list-text__text">УМК по программированию</span>
+                            </p>
+                            <form class="price-list__form">
+                                <button class="price-list__button">Оставить заявку</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="form-main">
+            <div class="form-main__block">
+                <div class="form">
+                    <div class="form-text">
+                        <h2 class="form-text__title">Запишитесь на курс со скидкой 10%</h2>
+                        <p class="form-text__text">Акция действительна до 10 марта 2022 года</p>
+                    </div>
+                    <form class="form-form">
+                        <input type="text" placeholder="Имя" maxlength="25" class="form-form__inp" required>
+                        <input type="tel" placeholder="Телефон" maxlength="25" inputmode="tel" class="form-form__inp" required>
+                        <input type="email" placeholder="E-mail" maxlength="25" inputmode="email" class="form-form__inp" required>
+                        <button type="submit" class="form-form__button">Оформить заказ</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="footer-page">
+        <div class="footer-page__block">
+            <div class="footer">
+                <img src="./logo/logo.svg" alt="logo" class="footer__logo">
+                <a href="tel:+78000001122" class="footer__tel">+7 800 000 11 22</a>
+                <p class="footer__text">© ROBO.SCHOOL</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./script/main.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>

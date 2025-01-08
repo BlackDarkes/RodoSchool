@@ -1,0 +1,112 @@
+.trainer-main{
+    @include width-page(var(--main-light));
+    position: relative;
+
+    &__block{
+        @include width-blocks(1520, 0);
+        margin: 0 10px 120px auto;
+
+        .trainer{
+            @include flex-column(60);
+
+            &__title{
+                font-size: var(--h3-font);
+
+                @include laptop{
+                    text-align: center;
+                }
+            }
+
+            &-list {
+                display: flex;
+                width: min(100%, 1520px);
+                height: 670px;
+                column-gap: 40px;
+                overflow-x: scroll;
+                scroll-snap-type: x mandatory;
+                scroll-snap-stop: start;
+            
+                &-li {
+                    @include flex-column(20);
+                    align-items: start;
+                    flex-shrink: 0;
+                    scroll-snap-align: start;
+                }
+            
+                &__image {
+                    width: 360px;
+                    height: 500px;
+                    border-radius: 20px;
+
+                    @include mobile{
+                        height: 306px;
+                        width: 220px;
+                    }
+                }
+
+                &__title{
+                    @include fluid-text(20, 24);
+                }
+                
+                &__text{
+                    @include fluid-text(14, 18);
+                    color: var(--accent-input);
+                }
+
+                &__button{
+                    @include fluid-text(16, 18);
+                    @include underline(var(--main-orange));
+                    @include uperline(var(--main-orange));
+                    position: relative;
+                    color: var(--main-orange);
+                }
+
+                &::-webkit-scrollbar{
+                    height: 10px;
+                    background-color: var(--accent-title);
+
+                    @include mobile{
+                        height: 5px;
+                    }
+                }
+
+                &::-webkit-scrollbar-thumb{
+                    border-radius: 40px;
+                    background-color: var(--main-dark);
+                }
+
+                @include mobile{
+                    column-gap: 20px;
+                    height: 500px;
+                }
+            }
+
+            &-form{
+                @include laptop{
+                    display: none;
+                }
+            }
+
+            &__button{
+                width: 40px;
+                height: 40px;
+                border-radius: 50px;
+                background-color: var(--main-dark);
+                color: var(--main-light);
+                transition: 0.4s;
+
+                @include button{
+                    background-color: var(--accent-dark);
+                }
+            }
+        }
+
+        @include desctop {
+            margin-inline: auto;
+        }
+
+        @include laptop{
+            margin-bottom: 60px;
+        }
+    }
+}

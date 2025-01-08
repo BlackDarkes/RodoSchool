@@ -1,0 +1,49 @@
+$desctop: 1280px;
+$laptop: 1024px;
+$mobile: 767px;
+
+@mixin button{
+    @media (hover: hover) {
+        &:hover{
+            @content;
+        }
+    }
+
+    @media (hover: none) {
+        &:active{
+            @content;
+        }
+    }
+}
+
+@mixin hover-before{
+    @media (hover: hover) {
+        &:hover::before{
+            @content;
+        }
+    }
+
+    @media (hover: none) {
+        &:active::before{
+            @content;
+        }
+    }
+}
+
+@mixin desctop{
+    @media (max-width: $desctop){
+        @content;
+    }
+}
+
+@mixin laptop{
+    @media (max-width: $laptop){
+        @content;
+    }
+}
+
+@mixin mobile{
+    @media(max-width: $mobile){
+        @content;
+    }
+}

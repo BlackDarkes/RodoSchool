@@ -1,0 +1,62 @@
+:root{
+    /*Bacground-color*/
+    --main-dark: #141024;
+    --main-light: #FFFFFF;
+    --main-gray: #F9F9F9;
+    --main-orange: #D52027;
+    --drop-shadow: #1410241A;
+
+    --accent-dark: #141024B2;
+    --accent-input: #282944B2;
+    --accent-title: #14102414;
+    --accent-orange: #e4494f;
+
+    --assistive-light:#1410241A;
+    --assistive-dark: #230B34;
+    --assistive-black: #14102433;
+    --assistive-lightt: #FFFFFFB2;
+    
+
+
+    /*Font*/
+    //font-family
+    --Jost-font: "Jost", sans-serif;
+
+    //font-weight
+    --dark-weight: 600;
+    --light-weight: 400;
+
+    //font-size
+    --h1-font: 50px;
+    --h2-font: 36px;
+    --h3-font: 30px;
+    --h4-font: 24px;
+
+    --h1-mob: 30px;
+
+    --extra-size: 70px;
+    --smool-size: 16px;
+
+    --extra-mob: 30px;
+
+    --font-size: 18px;
+    --navigation-size: 20px;
+
+
+
+    /*Radius*/
+    --button-radius: 5px;
+    --burger-radius: 10px;
+    --panels-radius: 20px;
+
+    /**Border*/
+    --border-burger: 1px solid transparent;
+
+
+
+    /*z-index*/
+    --z-100: 100;
+    --z-200: 200;
+    --z-300: 300;
+
+}

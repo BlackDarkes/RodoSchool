@@ -1,0 +1,102 @@
+.result-main{
+    @include width-page(var(--main-gray));
+
+    &__block{
+        @include width-blocks(1160, 120px);
+        padding-block: 100px;
+
+        .result{
+            @include flex-column(60);
+            align-items: start;
+
+            &__title{
+                font-size: var(--h3-font);
+
+                @include laptop{
+                    text-align: center;
+                    align-self: center
+                }
+            }
+
+            &-list{
+                @include flex-row(40);
+                flex-wrap: wrap;
+                justify-content: center;
+
+                &-li{
+                    @include flex-column(20);
+                    width: min(100%, 360px);
+                    align-items: start;
+                    
+                    @include laptop{
+                        align-items: center;
+                    }
+                }
+
+                &-oval{
+                    position: relative;
+
+                    &__oval{
+                        @include flex-center;
+                        position: absolute;
+                        top: 0; right: -34px;
+                        width: 24px; height: 24px;
+                        background-color: var(--accent-title);
+                        border-radius: 50%;
+
+                        &::before{
+                            display: none;
+                            position: absolute;
+                            top: -70px; right: -220px;
+                            content: "При наличии свободных мест";
+                            width: 251px; height: 56px;
+                            background-color: var(--main-light);
+                            box-shadow: 0 1px 2px 2px var(--drop-shadow);
+                            font-size: var(--smool-size);
+                            transition: display 1s;
+
+                            @include mobile{
+                                right: -30px;
+                            }
+                        }
+
+                        @include hover-before{
+                            @include flex-center;
+                        }
+                    }
+                }
+
+                &__title{
+                    @include fluid-text(20, 24);
+
+                    @include laptop{
+                        justify-content: center;
+                    }
+                }
+
+                &__text{
+                    @include fluid-text(16, 18);
+                    color: var(--accent-dark);
+
+                    @include laptop{
+                        text-align: center;
+                    }
+                }
+
+                @include desctop{
+                    gap: 30px;
+                }
+
+                @include laptop{
+                    gap: 30px;
+
+                }
+            }
+        }
+
+        @include laptop{
+            padding-block: 40px 60px;
+            margin-bottom: 60px;
+        }
+    }
+}

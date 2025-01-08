@@ -1,0 +1,96 @@
+.form-main{
+    @include width-page(var(--main-orange));
+    color: var(--main-light);
+    background-image: url(../image/_main/form/form.png);
+
+    &__block{
+        @include width-blocks(1040, 0);
+        padding-block: 87px;
+
+        .form{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+
+            &-text{
+                @include flex-column(20);
+
+                &__title{
+                    @include fluid-text(30, 36);
+                    line-height: 46.8px;
+
+                    @include laptop{
+                        text-align: center;
+                    }
+                }
+
+                &__text{
+                    @include fluid-text(16, 20);
+
+                    @include laptop{
+                        text-align: center;
+                    }
+                }
+
+                @include laptop{
+                    margin-inline: auto;
+                    row-gap: 10px;
+                }
+            }
+
+            &-form{
+                @include flex-column(10);
+
+                &__inp{
+                    padding: 19px 0 19px 20px;
+                    outline: 2px solid var(--main-orange);
+                    border: 0;
+                    border-radius: 5px;
+                    color: var(--accent-input);
+
+                    &:focus-visible{
+                        outline: 2px solid black;
+                    }
+
+                    &:user-valid{
+                        outline-color: green;
+                    }
+
+                    &:user-invalid{
+                        outline-color: yellow;
+                    }
+                }
+
+                &__button{
+                    @include fluid-text(16, 18);
+                    background-color: var(--main-dark);
+                    padding-block: 19px;
+                    color: var(--main-light);
+                    border-radius: 5px;
+                    transition: 0.4s;
+
+                    @include button{
+                        background-color: var(--accent-dark);
+                    }
+                }
+
+                @include laptop{
+                    width: min(100%, 700px);
+                    margin-inline: auto;
+                }
+            }
+
+            @include laptop{
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @include laptop{
+            padding-block: 40px;
+        }
+    }
+
+    @include laptop{
+        background-image: none;
+    }
+}

@@ -1,0 +1,108 @@
+.price-main{
+    @include width-page(var(--main-light));
+
+    &__block{
+        @include width-blocks(1160, 120px);
+
+        .price{
+            @include flex-column(60);
+
+            &__title{
+                font-size: var(--h3-font);
+
+                @include laptop{
+                    text-align: center;
+                }
+            }
+
+            &-list{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px;
+
+                &-li{
+                    @include flex-column(61);
+                    justify-content: space-between;
+                    padding-block: 40px;
+                    border: 1px solid var(--assistive-black);
+                    border-radius: 20px;
+                    transition: 0.7s;
+
+                    &:hover{
+                        transform: scaleY(1.05);
+                        background-color: var(--main-dark);
+                        color: var(--main-light);
+                    }
+
+                    &:active{
+                        transform: scaleY(1.05);
+                        background-color: var(--main-dark);
+                        color: var(--main-light);
+                    }
+                    @include laptop{
+                        width: 300px;
+                    }
+                }
+
+                &__title{
+                    @include fluid-text(30, 50);
+                    margin-inline: auto;
+                }
+
+                &-text{
+                    @include flex-column(20);
+                    align-items: center;
+
+                    &__money{
+                        font-size: var(--h1-font);
+                        font-weight: var(--dark-weight);
+                    }
+
+                    &__text{
+                        @include fluid-text(16, 18);
+                        line-height: 28.8px;
+                    }
+                }
+
+                &__form{
+                    display: flex;
+                }
+
+                &__button{
+                    @include fluid-text(16, 18);
+                    background-color: var(--main-orange);
+                    padding: 25px 78px;
+                    margin-inline: auto;
+                    border-radius: 5px;
+                    transition: 0.4s;
+                    
+                    @include button{
+                        background-color: var(--accent-orange);
+                    }
+
+                    @include mobile{
+                        padding: 17px 75px;
+                    }
+                }
+
+                @include desctop{
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @include mobile{
+                    @include flex-column(40);
+                    align-items: center;
+                }
+            }
+
+            @include mobile{
+                align-items: center;
+
+            }
+        }
+        
+        @include laptop{
+            margin-bottom: 60px;
+        }
+    }
+}

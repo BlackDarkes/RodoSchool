@@ -1,0 +1,103 @@
+@mixin fluid-text($min: 16px, $max: 72px){
+    font-size: clamp(#{$min}px, #{$max / 1280 * 100}vw, #{$max}px);
+}
+
+
+@mixin resize-link{
+    color: inherit;
+    
+    &,
+    &hover{
+        text-decoration: none;
+    }
+}
+
+@mixin resize-button{
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    user-select: none;
+    cursor: pointer;
+}
+
+@mixin width-blocks($width: 1px, $margin-bottom: 0px){
+    width: min(100% - 20px, #{$width}px);
+    margin-inline: auto;
+    margin-bottom: #{$margin-bottom};
+}
+
+@mixin width-page ($bacground-color: var(--main-dark)){
+    width: auto;
+    height: auto;
+    background-color: #{$bacground-color};
+}
+
+@mixin flex-space-center($gap-column: 0px){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: #{$gap-column}px;
+}
+
+@mixin flex-column ($row-gap: 0){
+    display: flex;
+    flex-direction: column;
+    row-gap: #{$row-gap}px;
+}
+
+@mixin flex-row ($column-gap){
+    display: flex;
+    column-gap: #{$column-gap}px;
+}
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin before-after{
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+@mixin underline($bacground-color: none,) {
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0; bottom: -5px;
+        height: 1px;
+        width: 100%;
+        background-color: #{$bacground-color};
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+    }
+
+    &:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform 0.5s;
+    }
+}
+
+@mixin uperline($bacground-color: none,) {
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0; top: -5px;
+        height: 1px;
+        width: 100%;
+        background-color: #{$bacground-color};
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s;
+    }
+
+    &:hover::after{
+        transform: scaleX(1);
+        transform-origin: right;
+        transition: transform 0.5s;
+    }
+}

@@ -1,0 +1,17 @@
+.header-telehom-mobile{
+    display: none;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    inset: 15px 64px 0 auto;
+    border: var(--border-burger);
+    border-radius: var(--burger-radius);
+    background: 
+    linear-gradient(var(--main-dark), var(--main-dark)) padding-box,
+    linear-gradient(180deg, rgb(255 255 255 / 0.4) 60%, rgb(0 0 0 / 1) 100%) border-box;
+
+
+    @include laptop{
+        @include flex-center;
+    }
+}

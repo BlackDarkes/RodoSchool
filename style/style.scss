@@ -1,0 +1,28 @@
+/*Bace*/
+@import "./_bace/normolise";
+@import "./_bace/media";
+@import "./_bace/mixins";
+@import "./_bace/variables";
+@import "./_bace/bace";
+
+
+
+/*Block*/
+//Header
+@import "./_blocks/_header/_header.scss";
+@import "./_blocks/_header/burger";
+@import "./_blocks/_header/telephon-mobile";
+
+
+//Main
+@import "./_blocks/_main/lable";
+@import "./_blocks/_main/info";
+@import "./_blocks/_main/result";
+@import "./_blocks/_main/trainer";
+@import "./_blocks/_main/pop_up";
+@import "./_blocks/_main/price";
+@import "./_blocks/_main/form";
+
+
+//Foter
+@import "./_blocks/_footer/footer";

@@ -1,0 +1,89 @@
+.label-main{
+    @include width-page;
+
+    &__block{
+        @include width-blocks(1494, 120px);
+        padding-top: 50px;
+        
+        .label{
+            @include flex-space-center(28);
+
+            &-object{
+                @include flex-column(50);
+                color: var(--main-light);
+                width: max(516px, 300px);
+                margin-left: auto;
+                margin-bottom: 200px;
+
+                &__title{
+                    @include fluid-text(30, 70);
+                    display: inline-flex;
+                    justify-content: center;
+                    width: min(100%, 29rem);
+                }
+
+                &__text{
+                    @include fluid-text(16, 20);
+                    width: min(100%, 29rem);
+
+                    @include desctop{
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                }
+
+                &__button{
+                    @include fluid-text(16, 18);
+                    color: var(--main-light);
+                    padding: 24px 54px;
+                    background-color: var(--main-orange);
+                    border-radius: var(--button-radius);
+                    transition: 0.4s;
+
+                    @include button{
+                        background-color: var(--accent-orange);
+                    }
+
+                    @include mobile{
+                        transform: translateY(340px);
+                        padding: 17px 82px;
+                    }
+                    
+                    @include desctop{
+                        margin-inline: auto;
+                    }
+                }
+
+                @include desctop{
+                    margin: 0;
+                    width: min(100%, 750px);
+                    align-items: center;
+                }
+
+                @include mobile{
+                    gap: 0;
+                }
+            }
+
+            &-image{
+                @include mobile{
+                    width: 273px;
+                }
+            }
+
+            @include desctop{
+                @include flex-column(20);
+            }
+
+            @include mobile{
+                gap: 0;
+            }
+        }
+
+        @include mobile{
+            padding-bottom: 40px;
+            margin-bottom: 70px;
+        }
+    }
+}
